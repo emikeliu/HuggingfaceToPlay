@@ -107,7 +107,7 @@ class TextGenerate extends React.Component {
                 else {
                     this.setState({
                         ready: true,
-                        text: json[0]["generated_text"]
+                        text: this.state.text+json[0]["generated_text"]
                     })
                 }
             }

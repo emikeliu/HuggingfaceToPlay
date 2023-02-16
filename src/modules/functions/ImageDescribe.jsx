@@ -144,7 +144,7 @@ class ImageDescribe extends React.Component {
                 </Card>
                 <FormGroup>
                     <Grid spacing={2} alignItems="center">
-                        <FormControlLabel control={<Switch onChange={() => { this.setState({ isUseStatic: !this.state.isUseStatic }) }} />} label="进行机器翻译" />
+                        {/* <FormControlLabel control={<Switch onChange={() => { this.setState({ isUseStatic: !this.state.isUseStatic }) }} />} label="进行机器翻译" /> */}
                         <FormControlLabel control={<Switch onChange={() => { this.setState({ speech: !this.state.speech }) }} />} label="进行朗读" />
                     </Grid>
                     <Button variant="contained" sx={{ "margin": 1 }} onClick={onClickEval}>执行推理</Button>
